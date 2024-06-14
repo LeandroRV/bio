@@ -2,13 +2,12 @@ body {
             background-color: #5893D4; /* Ajuste a cor conforme necessário */
         }
         .profile-card {
-            max-width: 500px;
+            max-width: 450px;
             margin: auto;
             padding: 20px;
             text-align: center;
             background-color: #ffffff;
-            border-radius: 10px;
-            border-color: blue 10px;
+            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-card img {
@@ -31,3 +30,7 @@ body {
             border-radius: 50%;
             }
 
+        .bkground{
+            background: ;
+
+        }
