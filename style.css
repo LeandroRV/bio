@@ -31,6 +31,7 @@ body {
 
         .rounded-circle{
             width: 150px;
+            height: 150px;
             border-radius: 50%;
             }
 
@@ -45,6 +46,28 @@ body {
         }
 
 
-        .wtsapp{
-            im
+        #typing-effect {
+        position: relative;
         }
+
+        #typing-effect::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          animation: blink 1s;
+        }
+
+        @keyframes blink {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
