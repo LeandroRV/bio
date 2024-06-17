@@ -14,6 +14,7 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-card img {
+            background-color: bisque;
             border-radius: 50%;
             margin-bottom: 15px;
             background-color: white;
@@ -34,11 +35,16 @@ body {
             }
 
         
-.tiny5-regular {
- font-family: "Trispace", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
+        .tiny5-regular {
+         font-family: "Trispace", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+          font-variation-settings:
+            "wdth" 100;
+        }
+
+
+        .wtsapp{
+            im
+        }
