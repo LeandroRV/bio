@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
 body {
-            background-color: #5893D4; /* Ajuste a cor conforme necessário */
+            background-color: #5893D4; /* Ajuste a cor conforme necessário*/
+         
         }
 
 
@@ -10,27 +11,36 @@ body {
             padding: 20px;
             text-align: center;
             background-color: #ffffff;
-            border-radius: 5px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-card img {
-            background-color: bisque;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            background-color: white;
+            max-width: 150px;
+            border-radius: 70%;
+            margin-bottom: 20px;
+           
         }
         .profile-card .btn {
-            width: 70%;
+            width: 100%;
             margin-bottom: 10px;
             margin-top: 10px;
             text-align: justify-all;
             font-size: 20px;
             padding-bottom:10 px;
-            padding-top:10 ;
-            border: 3px solid #dee2e6!important;
+            border-radius: 50px;
+            border: 2px solid #dee2e6!important;
             border-color: #80bdff !important;
+            justify-content: flex-start;
+            background: linear-gradient(to right,#5170FD,#4636FC);
             
         }
+
+        .profile-card .btn:hover{
+            transform: scale(1.05);
+        }
+
+
+
 
         .rounded-circle{
             width: 150px;
@@ -57,9 +67,9 @@ body {
           content: "";
           position: absolute;
           top: 0;
-          right: 0;
+          right: 10px;
           width: 2px;
-          height: 100%;
+          height: 50%;
           animation: blink 1s;
         }
 
