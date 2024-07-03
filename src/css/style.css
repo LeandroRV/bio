@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
 body {
-            background-color: #5893D4; /* Ajuste a cor conforme necessário*/
+           /* background-color: #5893D4;  Ajuste a cor conforme necessário*/
          
         }
 
@@ -10,9 +10,9 @@ body {
             margin: auto;
             padding: 20px;
             text-align: center;
-            background-color: #ffffff;
+            background-color: #f8f9fa;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 100px #007bff;
         }
         .profile-card img {
             max-width: 150px;
@@ -84,3 +84,16 @@ body {
               opacity: 1;
             }
           }
+
+@media (max-width: 576px) {
+    .profile-card {
+            max-width: 350px;
+            margin-trim: 5px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 0 100px #007bff;
+        }
+
+}
