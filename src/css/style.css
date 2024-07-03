@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
+
 body {
            /* background-color: #5893D4;  Ajuste a cor conforme necessário*/
          
+
         }
 
+        h2{
+
+            font-size: 2rem;
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
 
         .profile-card {
             max-width: 450px;
@@ -31,7 +41,7 @@ body {
             border: 2px solid #dee2e6!important;
             border-color: #80bdff !important;
             justify-content: flex-start;
-            background: linear-gradient(to right,#5170FD,#4636FC);
+            background: linear-gradient(to right,#13bfee,#4636FC);
             
         }
 
@@ -94,6 +104,14 @@ body {
             background-color: #f8f9fa;
             border-radius: 10px;
             box-shadow: 0 0 100px #007bff;
+        }
+        h2{
+
+            font-size: 20px;
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
         }
 
 }
