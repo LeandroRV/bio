@@ -7,9 +7,7 @@ body {
                background-size: 200% 200%;
                animation:   float 6s linear infinite alternate;
 
-         
-
-        }
+}
 
         h2{
 
@@ -39,18 +37,24 @@ body {
            
         }
         .profile-card .btn {
-            width: 100%;
+            width: 90%;
             margin-bottom: 10px;
             margin-top: 10px;
             text-align: justify-all;
             font-size: 20px;
             padding-bottom:10 px;
-            border-radius: 50px;
+            border-radius: 70px;
+            box-shadow: 5px 5px #1471cf52;
             border: 2px solid #dee2e6!important;
-            border-color: #80bdff !important;
+            /*border-color: black !important;*/
             justify-content: flex-start;
             background: linear-gradient(to right,#13bfee,#4636FC);
             
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 10px;
         }
 
         .profile-card .btn:hover{
