@@ -3,7 +3,9 @@
 body {
            /* background-color: #5893D4;  Ajuste a cor conforme necessário*/
                /*background-color: #1c2f85de;*/
-               background: linear-gradient(to right,#4636FC,#13bfee);
+               background: linear-gradient(to right,#4636FC,#13bfee,#050C9C, #A7E6FF);
+               background-size: 200% 200%;
+               animation:   float 6s linear infinite alternate;
 
          
 
@@ -30,7 +32,6 @@ body {
         .profile-card img {
             max-width: 150px;
             border-radius: 70%;
-            border-color: black;
             box-shadow: 0 0 10px #007bff;
             margin-bottom: 20px;
             margin-top: -40px;
@@ -101,6 +102,11 @@ body {
               opacity: 1;
             }
           }
+
+        @keyframes  float   {
+            from {background-position: 0 0 ;}
+            to {background-position: 100% 100%;}
+        }
 
 @media (max-width: 576px) {
     .profile-card {
