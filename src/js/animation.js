@@ -1,4 +1,4 @@
-const text = "Apenas um Analista de Sistemas que gosta de surf e cerveja!";
+const text = "Analista de Sistemas";
   const typingEffect = document.getElementById("typing-effect");
   let i = 0;
 
@@ -6,7 +6,7 @@ const text = "Apenas um Analista de Sistemas que gosta de surf e cerveja!";
     if (i < text.length) {
       typingEffect.innerHTML += text.charAt(i);
       i++;
-      setTimeout(type, 50); // ajuste o tempo de delay aqui
+      setTimeout(type, 70); // ajuste o tempo de delay aqui
     } else {
       // add cursor element
       const cursor = document.createElement("span");
