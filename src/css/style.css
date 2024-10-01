@@ -73,7 +73,6 @@ body {
 
         .profile-card .btn:hover{
             transform: scale(1.05);
-            TE: #dee2e6;
         }
 
 
@@ -87,10 +86,9 @@ body {
         .tiny5-regular {
          font-family: "Trispace", sans-serif;
           font-optical-sizing: auto;
-          font-weight: <weight>;
+          font-weight: normal;
           font-style: normal;
-          font-variation-settings:
-            "wdth" 100;
+          
         }
 
 
@@ -105,7 +103,7 @@ body {
           right: 10px;
           width: 2px;
           height: 50%;
-          animation: blink 1s;
+          animation: blink 10s;
         }
 
         @keyframes blink {
