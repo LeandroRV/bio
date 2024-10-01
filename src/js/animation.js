@@ -10,7 +10,7 @@ const text = "Analista de Sistemas";
     } else {
       // add cursor element
       const cursor = document.createElement("span");
-      cursor.textContent = "|";
+      cursor.textContent = "_";
       cursor.style.animation = "blink 1s";
       typingEffect.appendChild(cursor);
 

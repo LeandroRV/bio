@@ -1,38 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
 
+
 body {
-           /* background-color: #5893D4;  Ajuste a cor conforme necessário*/
-               /*background-color: #1c2f85de;*/
-               /*background: linear-gradient(to right,#4636FC,#13bfee,#050C9C, #A7E6FF);*/
-               background-image: url(../img/bg-1.jpg);
-               background-size: cover;
+               /*background-color: #5893D4;*/  /*Ajuste a cor conforme necessário*/
+               /*background-color: rgb(31, 142, 163);*/
+               background: linear-gradient(to bottom,#284184,#1F8EA3);
+               /*background-image: url(../img/bg-1.jpg);*/
+               background-size: auto;
                margin-top: 50px;
                margin-bottom: 50px;
 
 }
 
         h2{
-
-            font-size: 2rem;
-            font-family: "Orbitron", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
+            font-size: 30px;
+            font-family: 'Trispace';
+            font-optical-sizing: initial;
+            font-weight: 500;
             font-style: normal;
+            background-color: antiquewhite;
+            border-radius: 50px;
+            margin-bottom: 20px;
+                        
         }
 
+
+        a{
+            margin:0%;
+        }
+
+        
         .profile-card {
             max-width: 450px;
             margin: auto;
             padding: 20px;
             text-align: center;
-            background-color: #ffffff96 !important;
             border-radius: 10px;
-            box-shadow: 0 0 100px #007bff;
+            /*box-shadow: 0 0 100px #007bff;*/
         }
         .profile-card img {
             max-width: 150px;
             border-radius: 70%;
-            box-shadow: 0 0 10px #007bff;
+            /*box-shadow: 0 0 10px #007bff;*/
             margin-bottom: 20px;
             margin-top: -40px;
 
@@ -46,14 +55,16 @@ body {
             font-size: 20px;
             padding-bottom:10 px;
             border-radius: 70px;
-            box-shadow: 5px 5px #1471cf52;
+            box-shadow: 5px 5px #dfe3e752;
             border: 2px solid #dee2e6!important;
             /*border-color: black !important;*/
             justify-content: flex-start;
-            background: linear-gradient(to right,#13bfee,#4636FC);
+            background:rgba(210, 210, 224, 0.281);
             
             
         }
+
+        
 
         .footer{
             position: absolute;
@@ -62,9 +73,8 @@ body {
 
         .profile-card .btn:hover{
             transform: scale(1.05);
+            TE: #dee2e6;
         }
-
-
 
 
         .rounded-circle{
@@ -121,17 +131,20 @@ body {
             margin-trim: 5px;
             margin-top: 35px;
             text-align: center;
-            background-color: #f8f9fa;
+            /*background-color: #f8f9fa;*/
             border-radius: 10px;
-            box-shadow: 0 0 100px #007bff;
+            /*box-shadow: 0 0 100px #007bff;*/
         }
         h2{
-
             font-size: 20px;
-            font-family: "Orbitron", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
+            font-family: 'Trispace';
+            font-optical-sizing: initial;
+            font-weight: 500;
             font-style: normal;
+            background-color: antiquewhite;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            
         }
 
 }
