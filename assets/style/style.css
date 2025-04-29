@@ -16,7 +16,7 @@ body{
   background-size: cover;
 }
 .card{
-  width: 300px;
+  width: 350px;
   height: 500px;
   background-color: hsla(0, 0%, 12%, 0.651);
   border-radius: 6px;
@@ -25,6 +25,8 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 img{
   height: 9.5rem;
@@ -38,13 +40,13 @@ img{
 }
 .location{
   color: rgb(249, 250, 251);
-  font-size: 12px;
+  font-size: 15px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 .line{
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 .button{
