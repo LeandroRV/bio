@@ -12,7 +12,7 @@ body{
   align-items: center;
   background-color: hsl(0, 0%, 8%);
   background-position: center;
-  background-image: url(../Social-Link_profile/images/1714131699113.jfif);
+  background-image: url(../images/bg-2.jfif);
   background-size: cover;
 }
 .card{
@@ -37,7 +37,7 @@ img{
   color: white;
 }
 .location{
-  color: rgb(59, 103, 144);
+  color: rgb(249, 250, 251);
   font-size: 12px;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -67,3 +67,31 @@ img{
   cursor: pointer;
   
 }
+
+/* Tablet devices (768px and below) */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+
+  img {
+    height: 8.5rem;
+    width: 8.5rem;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .button {
+    width: 85%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+  }
+}
+
+
+
