@@ -1,99 +1,314 @@
-*{
+/* ── Reset ─────────────────────────────────────── */
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:system-ui;
 }
 
-body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(0, 0%, 8%);
-  background-position: center;
-  background-image: url(../images/bg-2.jfif);
-  background-size: cover;
+/* ── Tokens ─────────────────────────────────────── */
+:root {
+  --bg:             #060D1F;
+  --surface:        #0C1628;
+  --border:         rgba(255, 255, 255, 0.08);
+  --border-accent:  rgba(56, 189, 248, 0.30);
+  --accent:         #38BDF8;
+  --accent-dim:     rgba(56, 189, 248, 0.06);
+  --text-primary:   #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted:     #475569;
+  --green:          #4ade80;
+  --pink:           #F472B6;
 }
-.card{
-  width: 350px;
-  height: 500px;
-  background-color: hsla(0, 0%, 12%, 0.651);
-  border-radius: 6px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 25px;
+
+/* ── Base ─────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
 }
-img{
-  height: 9.5rem;
-  width: 9.5rem;
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ── Container ─────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ── Available badge ─────────────────────────────── */
+.available-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent);
+  border: 0.5px solid var(--border-accent);
+  border-radius: 20px;
+  padding: 4px 12px;
+  margin-bottom: 24px;
+  animation: fadeIn 0.5s ease both;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  background: var(--accent);
+  animation: pulse 2s ease-in-out infinite;
 }
-.name{
-  font-size: 25px;
-  color: white;
+
+/* ── Hero ─────────────────────────────────────── */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
 }
-.location{
-  color: rgb(249, 250, 251);
-  font-size: 15px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+
+.hero-text {
+  flex: 1;
 }
-.line{
-  color: white;
-  font-size: 15px;
+
+.name {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.05;
+  letter-spacing: -0.5px;
   margin-bottom: 10px;
+  animation: slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
-.button{
-  width: 80%;
-  background-color: hsl(0, 0%, 20%);
-  height: 40px;
-  color: white;
-  border-radius: 4px;
+
+.role {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 14px;
+  animation: slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+.bio {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+  max-width: 260px;
+  animation: slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+/* ── Avatar ─────────────────────────────────────── */
+.avatar-wrap {
+  flex-shrink: 0;
+  text-align: center;
+  animation: scaleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.avatar-ring {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-accent);
+  padding: 3px;
+  animation: ringPulse 3s ease-in-out 1.2s infinite;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.location {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 7px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Divider ─────────────────────────────────────── */
+.divider {
   border: none;
-  margin-top: 10px;
-  text-decoration: none; /* Remove o sublinhado */
-  display: inline-block; /* Permite o espaçamento entre os botões */
-  text-align: center; /* Centraliza o texto */
-  line-height: 40px; /* Centraliza verticalmente o texto */
+  border-top: 0.5px solid var(--border);
+  margin: 24px 0;
+  animation: fadeIn 0.5s ease 0.4s both;
 }
 
-.button:hover{
-  background-color: rgb(59, 103, 144);
-  color: white;
-  cursor: pointer;
-  
+/* ── Section label ─────────────────────────────── */
+.section-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  animation: fadeIn 0.5s ease 0.5s both;
 }
 
-/* Tablet devices (768px and below) */
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
-    min-height: 100vh;
-    border-radius: 0;
+/* ── Skills ─────────────────────────────────────── */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  animation: fadeIn 0.5s ease 0.55s both;
+}
+
+.skill {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 12px;
+}
+
+.skill.hi {
+  color: var(--accent);
+  border-color: var(--border-accent);
+  background: var(--accent-dim);
+}
+
+/* ── Social buttons ─────────────────────────────── */
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: fadeIn 0.5s ease 0.65s both;
+}
+
+.soc-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 0.5px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.soc-btn:hover {
+  border-color: var(--border-accent);
+  background: var(--accent-dim);
+  transform: translateX(3px);
+}
+
+.soc-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.soc-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.soc-icon--linkedin  { color: var(--accent); background: rgba(56, 189, 248, 0.08); }
+.soc-icon--instagram { color: var(--pink);   background: rgba(244, 114, 182, 0.08); }
+.soc-icon--whatsapp  { color: var(--green);  background: rgba(74, 222, 128, 0.08); }
+
+.soc-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.soc-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.soc-handle {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.soc-arrow {
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.soc-btn:hover .soc-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+/* ── Keyframes ─────────────────────────────────── */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes ringPulse {
+  0%, 100% { border-color: rgba(56, 189, 248, 0.35); }
+  50%       { border-color: rgba(56, 189, 248, 0.85); }
+}
+
+/* ── Reduced motion ─────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
+}
 
-  img {
-    height: 8.5rem;
-    width: 8.5rem;
+/* ── Responsive — mobile ─────────────────────────── */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding: 2.5rem 1.25rem;
   }
 
   .name {
-    font-size: 22px;
+    font-size: 30px;
   }
 
-  .button {
-    width: 85%;
-    height: 38px;
-    line-height: 38px;
-    font-size: 14px;
+  .avatar-ring {
+    width: 76px;
+    height: 76px;
+  }
+
+  .bio {
+    max-width: 100%;
   }
 }
-
-
-
