@@ -312,3 +312,130 @@ body {
     max-width: 100%;
   }
 }
+
+/* ── Click counter badge ─────────────────────────── */
+.soc-count {
+  font-size: 10px;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.04);
+  border: 0.5px solid var(--border);
+  border-radius: 20px;
+  padding: 2px 8px;
+  min-width: 28px;
+  text-align: center;
+  transition: color .2s;
+}
+.soc-btn:hover .soc-count { color: var(--accent); }
+
+/* ── Formulários compartilhados ──────────────────── */
+.field {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 13px;
+  margin-bottom: 8px;
+  display: block;
+  transition: border-color .2s;
+  resize: none;
+}
+.field::placeholder { color: var(--text-muted); }
+.field:focus { outline: none; border-color: var(--border-accent); }
+
+.btn-submit {
+  width: 100%;
+  background: var(--accent);
+  color: #060D1F;
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .2s, transform .15s;
+  margin-top: 4px;
+}
+.btn-submit:hover { opacity: .88; }
+.btn-submit:active { transform: scale(.98); }
+.btn-submit:disabled { opacity: .5; cursor: not-allowed; }
+
+/* ── Guestbook ───────────────────────────────────── */
+.gb-form-wrap { margin-bottom: 20px; }
+
+.gb-hint {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  text-align: center;
+}
+
+.gb-list { display: flex; flex-direction: column; gap: 8px; }
+
+.empty-state, .loading-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 16px 0;
+}
+
+.gb-post {
+  background: rgba(255,255,255,0.03);
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.gb-post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.gb-post-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.gb-post-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.gb-post-msg {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.gb-delete-btn {
+  margin-top: 8px;
+  background: transparent;
+  border: 0.5px solid rgba(239,68,68,0.35);
+  border-radius: 6px;
+  color: #f87171;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 11px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.gb-delete-btn:hover { background: rgba(239,68,68,0.08); }
+
+/* ── Contact form ────────────────────────────────── */
+.ct-form-wrap { margin-bottom: 8px; }
+
+.ct-feedback {
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+  min-height: 18px;
+}
+.ct-feedback.success { color: var(--green); }
+.ct-feedback.error   { color: #f87171; }
